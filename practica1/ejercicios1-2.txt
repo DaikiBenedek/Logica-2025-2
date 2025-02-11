@@ -1,0 +1,12 @@
+Ejercicio 1
+
+a) Esta expresión lambda no puede reducirse más
+b) Esta expresión diverge, pues al sustituir los parámetros obtenemos siempre (\y.yy)(\y.yy)
+c) Esta expresión lambda se reduce a 'zzz' al aplicar la sustitución
+
+Ejercicio 2
+
+a) (\abc.cba)zz(\wv.w) -> (\wv.w)zz -> z
+b) (\x.\y.xyy)(\a.a)b -> (\a.a)bb -> bb
+c) (\y.y)(\x.xx)(\z.zq) -> (\y.y)(\z.zq)(\z.zq) 
+    -> (\z.zq)(\z.zq) -> (\z.zq)q -> qq
