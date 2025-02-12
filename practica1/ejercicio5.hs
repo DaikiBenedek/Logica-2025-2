@@ -10,5 +10,5 @@ anteriorGuardas n
         | otherwise      = n - 1
 
 -- verificación de equivalencia
-equivalenciaAnterior :: Integer -> Bool
-equivalenciaAnterior n = anteriorGuardas n == anteriorPatrones n
+anteriorEquivalencia :: Integer -> Bool
+anteriorEquivalencia n = anteriorGuardas n == anteriorPatrones n
