@@ -4,14 +4,18 @@ data ArbolBin = Vacio
               | Nodo Int ArbolBin ArbolBin
               deriving (Show, Eq)
 
+--Ejercicio1
+--Funcion que cuenta los nodos en un arbol binario
 count :: ArbolBin -> Int
 count Vacio = 0
 count (Nodo a i d) = 1 + count i + count d
 
+--Funcion que devuelve la altura de un arbol binario
 height :: ArbolBin -> Int
 height Vacio = 0
 height (Nodo a i d) = 1 + max (height i) (height d)
 
+--Funcion que dado un entero no negativo k, devuelve un arbol binario balanceado que contenga en sus nodos a todos los enteros no negativos tal que z<=k
 arbolBalanceado :: Int -> ArbolBin
 arbolBalanceado = arbolAux 0 0 
 
